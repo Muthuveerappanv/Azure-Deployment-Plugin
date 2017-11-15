@@ -1,0 +1,11 @@
+.project
+.classpath
+.settings
+pom.xml.versionsBackup
+target
+.checkstyle
+.springBeans
+.factorypath
+.log
+.DS_Store
+logs
