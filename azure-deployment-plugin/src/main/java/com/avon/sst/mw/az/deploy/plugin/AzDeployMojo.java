@@ -72,6 +72,9 @@ public class AzDeployMojo extends AbstractMojo {
 
 	@Parameter(required = true, property = "ftpHostName")
 	private String ftpHostName;
+	
+	@Parameter(required = true, property = "subscriptionId")
+	private String subscriptionId;
 
 	Log log = getLog();
 
@@ -112,7 +115,7 @@ public class AzDeployMojo extends AbstractMojo {
 			token = getAzureADToken(tokenUrl, restTemplate);
 			log.info("Token Received Successfully!");
 
-			log.info("Azure deployment - Base URL == " + AzDeployConstants.AZ_APP_URL);
+			log.info("Azure deployment - Base URL == " + tokenUrl);
 
 			// Invoke FTP push to add binary in temp folder
 			ftpClient.setRemoteHost(ftpHostName);
@@ -182,10 +185,10 @@ public class AzDeployMojo extends AbstractMojo {
 	}
 
 	public void controlAppStartStop(String token, RestTemplate restTemplate, String action) {
-		String appUrl = String.format(AzDeployConstants.AZ_APP_URL, resourceGroup);
+		String appUrl = String.format(AzDeployConstants.AZ_APP_URL, subscriptionId, resourceGroup);
 		URI finalUrl = UriComponentsBuilder.fromHttpUrl(appUrl).pathSegment(appName, action)
 				.queryParam("api-version", AzDeployConstants.AZ_API_VRSN).build().toUri();
-		HttpEntity<String> httpEntity = new HttpEntity<String>(new HttpHeaders() {
+		HttpEntity httpEntity = new HttpEntity<>(new HttpHeaders() {
 			{
 				set("Authorization", token);
 			}

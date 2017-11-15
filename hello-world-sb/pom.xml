@@ -47,13 +47,14 @@
 				<groupId>com.azure.utility</groupId>
 				<artifactId>azure-deployment-plugin</artifactId>
 				<configuration>
-					<appName></appName>
+					<appName>az-sb-hello-world</appName>
 					<clientId></clientId>
 					<clientPassword></clientPassword>
 					<ftpCredentials></ftpCredentials>
 					<ftpHostName></ftpHostName>
 					<resourceGroup></resourceGroup>
 					<tenantId></tenantId>
+					<subscriptionId></subscriptionId>
 				</configuration>
 				<version>1.0.0</version>
 			</plugin>
