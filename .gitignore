@@ -3,9 +3,11 @@
 .settings
 pom.xml.versionsBackup
 target
+/.settings/
 .checkstyle
 .springBeans
 .factorypath
 .log
 .DS_Store
 logs
+/.mvn/
