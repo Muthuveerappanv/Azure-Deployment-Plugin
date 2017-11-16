@@ -12,7 +12,7 @@ Maven Plugin for deploying Springboot (or) other java projects to Azure API apps
 
 - After Creating the App select Required Permissions on the app to add 'Windows Azure Service Management API' and provide all required permissions. (read - write). This ensures that the AD oauth app has access to the Azure Service Management APIs (start/stop Api/web App)
 
-  ![Alt text](images/Azure33.jpg?raw=true "Title")
+  ![Alt text](images/Azure3.jpg?raw=true "Title")
 
   ![Alt text](images/Azure4.jpg?raw=true "Title")
 
