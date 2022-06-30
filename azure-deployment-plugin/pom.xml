@@ -21,7 +21,7 @@
 		<maven.archiver.version>3.0.2</maven.archiver.version>
 		<maven.plugin.version>3.5</maven.plugin.version>
 		<sst-project-version>0.0.1-SNAPSHOT</sst-project-version>
-		<plexus-archiver-version>3.3</plexus-archiver-version>
+		<plexus-archiver-version>3.6.0</plexus-archiver-version>
 		<plexus-utils-version>3.0.24</plexus-utils-version>
 		<spring-version>4.3.8.RELEASE</spring-version>
 		<commons-net-version>3.6</commons-net-version>
