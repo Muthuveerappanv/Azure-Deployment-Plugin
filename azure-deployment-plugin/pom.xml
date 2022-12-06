@@ -24,7 +24,7 @@
 		<plexus-archiver-version>3.3</plexus-archiver-version>
 		<plexus-utils-version>3.0.24</plexus-utils-version>
 		<spring-version>4.3.8.RELEASE</spring-version>
-		<commons-net-version>3.6</commons-net-version>
+		<commons-net-version>3.9.0</commons-net-version>
 		<commons-io-version>2.5</commons-io-version>
 		<jackson-version>[2.9.9.2,)</jackson-version>
 		<edtFTPj-version>1.5.3</edtFTPj-version>
