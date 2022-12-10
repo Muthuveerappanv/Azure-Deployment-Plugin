@@ -23,7 +23,7 @@
 		<sst-project-version>0.0.1-SNAPSHOT</sst-project-version>
 		<plexus-archiver-version>3.3</plexus-archiver-version>
 		<plexus-utils-version>3.0.24</plexus-utils-version>
-		<spring-version>4.3.8.RELEASE</spring-version>
+		<spring-version>6.0.0</spring-version>
 		<commons-net-version>3.6</commons-net-version>
 		<commons-io-version>2.5</commons-io-version>
 		<jackson-version>[2.9.9.2,)</jackson-version>
